@@ -33,8 +33,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double _billAmount = 0.0;
-  double _tipPercentage = 0.0;
   double _totalTip = 0.0;
   double _totalAmount = 0.0;
   double _currentSliderValue = 0;
