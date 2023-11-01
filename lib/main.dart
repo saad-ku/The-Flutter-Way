@@ -33,6 +33,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   double _totalTip = 0.0;
   double _totalAmount = 0.0;
   double _currentSliderValue = 0;
@@ -82,10 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Slider(
                value: _currentSliderValue,
                max: 30,
-               divisions: 5,
+               divisions: 10,
+               min: 0,
                label: '${_currentSliderValue.round()}%',
                onChanged: (double value) {
-                _currentSliderValue = value;
+                setState(() {
+                  _currentSliderValue = value;
+                });
                _calculateTip();
         },
       ),
