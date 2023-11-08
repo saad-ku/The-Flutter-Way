@@ -72,15 +72,16 @@ class ProductBox extends StatelessWidget {
          padding: const EdgeInsets.all(2), 
          height: 120, 
          child: Card(
+          color: Colors.white,
             child: Row(
-               mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+               mainAxisAlignment: MainAxisAlignment.center, 
                children: <Widget>[ 
                   Image.asset("images/$image"), 
                   Expanded( 
                      child: Container( 
                         padding: const EdgeInsets.all(5), 
                         child: Column(    
-                           mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                           mainAxisAlignment: MainAxisAlignment.center, 
                            children: <Widget>[ 
                               Text(
                                  name, style: const TextStyle(
